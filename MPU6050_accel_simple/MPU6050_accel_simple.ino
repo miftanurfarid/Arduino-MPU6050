@@ -74,21 +74,21 @@ void loop()
   Vector rawAccel = mpu.readRawAccel();
   Vector normAccel = mpu.readNormalizeAccel();
 
+  // Raw
   Serial.print(" Xraw = ");
   Serial.print(rawAccel.XAxis);
   Serial.print(" Yraw = ");
   Serial.print(rawAccel.YAxis);
   Serial.print(" Zraw = ");
-
   Serial.println(rawAccel.ZAxis);
-  Serial.print(" Xnorm = ");
-  Serial.print(normAccel.XAxis);
-  Serial.print(" Ynorm = ");
-  Serial.print(normAccel.YAxis);
-  Serial.print(" Znorm = ");
-  Serial.println(normAccel.ZAxis);
+
+  // Normalized
+//  Serial.print(" Xnorm = ");
+//  Serial.print(normAccel.XAxis);
+//  Serial.print(" Ynorm = ");
+//  Serial.print(normAccel.YAxis);
+//  Serial.print(" Znorm = ");
+//  Serial.println(normAccel.ZAxis);
   
   delay(10);
 }
-
-
